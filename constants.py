@@ -1,4 +1,4 @@
-token = '822303683:AAE1T0hrvpWaKO13Flsx0RfeAxd_ujt7jf4'
+token = 'XXXXX'
 
 photo_url = 'https://pp.userapi.com/c854328/v854328822/2afbb/JwH--2Grai4.jpg'
 
