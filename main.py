@@ -70,14 +70,6 @@ def send_schedule(msg):
     print('Количество обращений к боту: ', constants.requests_quantity)
 
 
-@bot.message_handler(commands=['start'])
-def start(message):
-    constants.requests_quantity += 1
-    bot.send_message(message.chat.id, 'Привет, {name}! '.format(name=str(message.from_user.username)),
-                     reply_markup=init_markup())
-    print('Количество обращений к боту: ', constants.requests_quantity)
-
-
 @bot.message_handler(commands=['weather'])
 def show_weather(message):
     constants.requests_quantity += 1
@@ -90,7 +82,7 @@ def show_weather(message):
                          .format(temp_min=math.ceil(weather[2]), temp_max=math.ceil(weather[3])))
         print('Количество обращений к боту: ', constants.requests_quantity)
     except TypeError as e:
-        print('TypeError occured')
+        print('TypeError occurred')
         print(e.args)
         bot.send_message(message.chat.id, 'Что-то пошло не так! Попробуй запросить погоду позже...')
 
