@@ -17,6 +17,6 @@ Constants.py file contains dictionary for correct weather imaging.
 I request weather from [Open Weather Map API](https://openweathermap.org/api)
 It responses with JSON array which is then being processed with get_weather() function from main.py
 
-All eternal work with Telegram API is courtesy of [pyTelegramBotApi](https://github.com/eternnoir/pyTelegramBotAPI)
+All internal work with Telegram API is courtesy of [pyTelegramBotApi](https://github.com/eternnoir/pyTelegramBotAPI)
 
 Bot is able to work with commands '/start', '/schedule', '/weather'
